@@ -23,6 +23,16 @@
     }
 }
 
+@media (max-width: 1366px){
+    .container-about{
+        margin: 1% 0;
+    }
+
+    .container-about-card{
+        margin: 100px 0 300px;
+    }
+}
+
 @media (max-width: 1024px) {
     .servicos-container {
         grid-template-columns: repeat(3, 1fr);
