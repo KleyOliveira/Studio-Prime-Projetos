@@ -1,0 +1,51 @@
+/*          IMPORTAÇÕES          */
+@import url('https://fonts.cdnfonts.com/css/bankgothic-md-bt');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*          VARIAVEIS            */
+
+:root {
+    --clr-hero: #f1f1f1;    /*      COR DE TEXTO        */
+    --bg-hero: #111;    /*      COR DE FUNDO        */
+    --pri: #f8cc20;    /*      COR PRIMARIO        */
+    --sec: #FFBB00;    /*      COR SECUNDARIO      */
+    --bg-blur: #111111;
+}
+
+/*          CONFIG               */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+body {
+    background-color: var(--bg-hero);
+    color: var(--clr-hero);
+}
+
+a {
+    color: var(--clr-hero);
+}
+
+.whats-contato a{
+    padding: 10px 19px;
+    font-size: 35px;
+    background-color: #75db00;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.whats-contato a:hover{
+    background-color: #60b400;
+}

@@ -1,0 +1,162 @@
+/* Importando a folha de estilo de normalização */
+@import './../normalize.css';
+
+/* Estilo da barra de navegação */
+.navbar {
+    padding: 7px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--bg-hero);
+}
+
+.nav-logo {
+    margin-top: 5px;
+}
+
+/* Menu Desktop */
+.nav-links-desktop {
+    display: flex;
+    align-items: center;
+}
+
+/* Lista do menu desktop */
+.nav-links-desktop ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-links-desktop ul li {
+    position: relative;
+}
+
+/* Estilo dos links do menu desktop */
+.nav-links-desktop ul li a {
+    display: block;
+    padding: 7px 14px;
+    color: var(--clr-hero);
+    text-align: center;
+    border-top: 2px solid transparent;
+    transition: background-color 0.3s, color 0.3s, border-top 0.3s;
+}
+
+.nav-links-desktop ul li a:hover {
+    color: var(--sec);
+    border-top: 2px solid var(--sec);
+}
+
+/* Menu Dropdown Desktop */
+.nav-links-desktop .dropdown-content {
+    position: absolute;
+    background-color: var(--bg-hero);
+    padding: 0;
+    min-width: 300px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    display: none;
+}
+
+.nav-links-desktop .dropdown-content li a {
+    padding: 10px 20px;
+    color: var(--clr-hero);
+    text-align: left;
+}
+
+/* Exibe o menu dropdown ao passar o mouse sobre o item */
+.nav-links-desktop .dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+/* Botão de navegação */
+.nav-btn {
+    background-color: var(--pri);
+    padding: 5px 50px;
+    color: var(--bg-hero);
+    border-radius: 100px;
+    margin-left: 40px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--sec);
+    color: var(--clr-hero);
+}
+
+/* Menu Mobile */
+.hamburger {
+    display: none; /* O menu hambúrguer é oculto por padrão */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Menu de navegação mobile */
+.nav-links-mobile {
+    display: none; /* O menu mobile é oculto por padrão */
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--bg-hero);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 999;
+}
+
+.nav-links-mobile ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-links-mobile ul li {
+    width: 100%;
+}
+
+.nav-links-mobile ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: var(--clr-hero);
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links-mobile ul li a:hover {
+    background-color: var(--sec);
+    color: var(--bg-hero);
+}
+
+/* Menu Dropdown Mobile */
+.nav-links-mobile .dropdown-content {
+    display: none; /* O menu dropdown mobile é oculto por padrão */
+    background-color: var(--bg-hero);
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.nav-links-mobile .dropdown.active .dropdown-content {
+    display: block;
+}
+
+.nav-links-mobile .dropdown-content li {
+    border-bottom: 1px solid transparent;
+}
+
+.nav-links-mobile .dropdown-content li a {
+    padding: 10px;
+    color: var(--clr-hero);
+}

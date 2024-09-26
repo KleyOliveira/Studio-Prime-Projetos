@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- METADADOS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Studio Prime Projetos">
+    <meta name="author" content="Kleydson Conrado">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="assets/css/extend.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="shortcut icon" href="assets/imgs/LogoStudioPrime.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <!-- Ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Studio Prime</title> <!-- Título da página -->
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <!-- LOGO -->
+        <a href="#" class="nav-logo" title="Logo Studio Prime">
+            <img src="assets/imgs/LogoStudioPrime.png" alt="Logo Studio Prime" height="40px">
+        </a>
+
+        <!-- NAV LINKS DESKTOP -->
+        <div class="nav-links-desktop">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about">Quem Somos</a></li>
+                <li><a href="#equipe">Nossa Equipe</a></li>
+                <li class="dropdown">
+                    <a href="#servicos">Serviços ▾</a>
+                    <ul class="dropdown-content">
+                        <!-- Colunas do menu dropdown -->
+                        <div class="dropdown-column">
+                            <li><a href="#servicos">Alvenaria</a></li>
+                            <li><a href="#servicos">Drywall</a></li>
+                            <li><a href="#servicos">Elétrica</a></li>
+                            <li><a href="#servicos">Gesso</a></li>
+                            <li><a href="#servicos">Hidráulica</a></li>
+                        </div>
+                        <div class="dropdown-column">
+                            <li><a href="#servicos">Instalações</a></li>
+                            <li><a href="#servicos">Móveis</a></li>
+                            <li><a href="#servicos">Pintura</a></li>
+                            <li><a href="#servicos">Planejamentos</a></li>
+                            <li><a href="#servicos">Reparos</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+            <!-- NAV BUTTON -->
+            <a href="#ctt" class="nav-btn">Contato</a>
+        </div>
+        <!-- HAMBURGER MENU -->
+        <div class="hamburger">
+            <i class="bi bi-list"></i>
+        </div>
+        <!-- NAV LINKS MOBILE -->
+        <div class="nav-links-mobile">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about">Quem Somos</a></li>
+                <li><a href="#equipe">Nossa Equipe</a></li>
+                <li class="dropdown">
+                    <a href="#servicos" class="dropdown-toggle">Serviços ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#servicos">Alvenaria</a></li>
+                        <li><a href="#servicos">Drywall</a></li>
+                        <li><a href="#servicos">Elétrica</a></li>
+                        <li><a href="#servicos">Gesso</a></li>
+                        <li><a href="#servicos">Hidráulica</a></li>
+                        <li><a href="#servicos">Instalações</a></li>
+                        <li><a href="#servicos">Móveis</a></li>
+                        <li><a href="#servicos">Pintura</a></li>
+                        <li><a href="#servicos">Planejamentos</a></li>
+                        <li><a href="#servicos">Reparos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="hero-container">
+        <h1>STUDIO PRIME
+            <br>
+            <span>PROJETOS</span>
+        </h1>
+        <a href="#ctt">CONTATO</a>
+    </div>
+    <div class="container-about" id="about">
+        <div class="left">
+            <img src="assets/imgs/imagem-multi.png" alt=""
+                style="max-width: 100%; border: 2px solid var(--sec); border-radius: 10px;">
+        </div>
+        <div class="right">
+            <h1>QUEM <span>SOMOS</span></h1>
+            <p>Somos uma empresa especializada na criação de móveis planejados de alta qualidade, projetados para
+                atender aos mais exigentes padrões de elegância, funcionalidade e exclusividade. A marca <span>Studio
+                    Prime Projetos</span> está no mercado de móveis planejados, sendo reconhecidos por nosso compromisso
+                com a excelência e a satisfação de nossos clientes.</p>
+            <div class="about-midias">
+                <ul>
+                    <li><a href="https://www.instagram.com/studioprimeguaruja/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/StudioPrimeGuaruja" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/@studioprimeguaruja281" target="_blank"><i class="bi bi-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-about-card" id="equipe">
+        <h1>NOSSA <span>EQUIPE</span></h1>
+        <div class="slider-container">
+            <!-- Botões de navegação, visíveis apenas no desktop -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider">
+                <div class="slide">
+                    <div class="card">
+                        <img src="assets/imgs/Time/Henrique.png" alt="Image 1">
+                        <h2>CEO</h2>
+                        <p>Henrique Nunes</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="assets/imgs/Time/Ana.png" alt="Image 2">
+                        <h2>ARQUITETA</h2>
+                        <p>Ana Takahashi</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="assets/imgs/Time/Mirian.png" alt="Image 3">
+                        <h2>DESIGN DE ANTERIORES</h2>
+                        <p>Mirian Borges</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="assets/imgs/Time/Tatiane.png" alt="Image 4">
+                        <h2>GERENTE DE LOJAS</h2>
+                        <p>Tatiane Nunes</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="assets/imgs/Time/Kallvin.png" alt="Image 5">
+                        <h2>ENCARREGADO DE MARCENARIA</h2>
+                        <p>Kallvin Oliveira</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="assets/imgs/Time/Natalia.png" alt="Image 6">
+                        <h2>ADMINISTRATVO</h2>
+                        <p>Natalia Nunes</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Botão next -->
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <!-- Bolinhas indicadoras abaixo do slider -->
+        <div class="dots">
+            <span class="dot" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+            <span class="dot" onclick="goToSlide(4)"></span>
+            <span class="dot" onclick="goToSlide(5)"></span>
+        </div>
+    </div>
+    <div class="container-servicos" id="servicos">
+        <h1>SERVIÇOS</h1>
+        <div class="servicos-container">
+            <div class="servico-card">
+                <div class="servico-icon"><i class="fas fa-hard-hat"></i></div>
+                <h3>Alvenaria</h3>
+                <p class="servico-resumo">Construção segura e durável.</p>
+                <div class="servico-hover">
+                    <p>Estruturas robustas e de alta qualidade para sua obra, com foco na segurança.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-icon"><i class="fas fa-hammer"></i></div>
+                <h3>Drywall</h3>
+                <p class="servico-resumo">Paredes rápidas e modernas.</p>
+                <div class="servico-hover">
+                    <p>Montagem eficiente de paredes internas com acabamentos estéticos e funcionais.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Elétrica</h3>
+                <p class="servico-resumo">Serviços elétricos seguros.</p>
+                <div class="servico-hover">
+                    <p>Instalação e reparo de sistemas elétricos, garantindo eficiência e segurança.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-icon"><i class="fas fa-paint-roller"></i></div>
+                <h3>Gesso</h3>
+                <p class="servico-resumo">Acabamentos elegantes em gesso.</p>
+                <div class="servico-hover">
+                    <p>Transformamos ambientes com soluções em gesso que combinam estética e praticidade.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-icon"><i class="fas fa-faucet"></i></div>
+                <h3>Hidráulica</h3>
+                <p class="servico-resumo">Instalações hidráulicas eficazes.</p>
+                <div class="servico-hover">
+                    <p>Soluições práticas e duráveis em instalações e manutenções hidráulicas.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-icon"><i class="fas fa-tools"></i></div>
+                <h3>Instalações</h3>
+                <p class="servico-resumo">Instalação precisa de móveis.</p>
+                <div class="servico-hover">
+                    <p>Montagem profissional de móveis, assegurando funcionalidade e estética.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-icon"><i class="fas fa-couch"></i></div>
+                <h3>Móveis</h3>
+                <p class="servico-resumo">Móveis planejados sob medida.</p>
+                <div class="servico-hover">
+                    <p>Criação de móveis personalizados que otimizam e transformam espaços.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-icon"><i class="fas fa-paint-brush"></i></div>
+                <h3>Pintura</h3>
+                <p class="servico-resumo">Pintura de alta durabilidade.</p>
+                <div class="servico-hover">
+                    <p>Serviços de pintura com materiais de qualidade, garantindo acabamentos duradouros.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-icon"><i class="fas fa-ruler-combined"></i></div>
+                <h3>Planejamentos</h3>
+                <p class="servico-resumo">Projetos de engenharia detalhados.</p>
+                <div class="servico-hover">
+                    <p>Planejamento cuidadoso para atender todas as exigências do cliente com precisão.</p>
+                </div>
+            </div>
+            <div class="servico-card">
+                <div class="servico-icon"><i class="fas fa-wrench"></i></div>
+                <h3>Reparos</h3>
+                <p class="servico-resumo">Manutenção rápida e eficaz.</p>
+                <div class="servico-hover">
+                    <p>Pequenos reparos feitos com agilidade, mantendo a funcionalidade e a estética.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-vid">
+        <video src="assets/vid/apresentacaoSPP.mp4" controls height="500px"></video>
+    </div>
+
+
+
+    <div class="container-contato" id="ctt">
+        <h1>CONTATO</h1>
+        <div class="whats">
+            <h4>WhatsApp: </h4>
+            <p>(12) 23412-1234</p>
+        </div>
+        <div class="email">
+            <h4>E-mail: </h4>
+            <p> studioprimeguaruja@gmail.com</p>
+        </div>
+        <div class="content-contato">
+            <div class="left">
+                <p><b>Endereço:</b> Av. Mario Ribeiro, 45 Centro, Guarujá - SP</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d732.0957082365906!2d-46.253386230473!3d-23.993883673437818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d1fe2e05684d4f%3A0xe8146b9b8c7c6c27!2sR.%20Mario%20Ribeiro%2C%2045%20-%20Centro%2C%20Guaruj%C3%A1%20-%20SP%2C%2011410-190!5e1!3m2!1spt-BR!2sbr!4v1727039486421!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="right">
+                <p><b>Endereço:</b> Av. Majory Prado 753, Pernambuco - Guarujá - SP</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d550.8352507598112!2d-46.19934436071198!3d-23.983801628650717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727348435419!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Sobre Nós</h2>
+                <p>Nossa empresa oferece soluções inovadoras para móveis planejados, combinando estilo e funcionalidade.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h2>Indice</h2>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#about">Quem Somos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#ctt">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h2>Siga-nos</h2>
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/studioprimeguaruja/" target="_blank" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/StudioPrimeGuaruja" target="_blank" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/@studioprimeguaruja281" target="_blank" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Studio Prime Projetos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <div class="container-footer">
+
+    </div>
+
+    <div class="whats-contato">
+        <a href="">
+            <i class="bi bi-whatsapp"></i></a>
+
+        </a>
+    </div>
+    <!-- SCRIPT -->
+    <script src="assets/js/script.js"></script> <!-- Script JavaScript principal -->
+</body>
+
+</html>
